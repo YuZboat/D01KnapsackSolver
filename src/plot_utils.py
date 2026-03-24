@@ -1,9 +1,5 @@
 import matplotlib.pyplot as plt
 
-# 解决中文显示
-plt.rcParams["font.family"] = ["SimHei", "WenQuanYi Micro Hei", "Heiti TC"]
-plt.rcParams["axes.unicode_minus"] = False
-
 def draw_weight_value_scatter(item_sets):
     weights = []
     values = []
@@ -16,8 +12,8 @@ def draw_weight_value_scatter(item_sets):
         values.append(s[5])
 
     plt.scatter(weights, values, s=10, color='blue')
-    plt.xlabel('Weight')
-    plt.ylabel('Value')
-    plt.title('D01KP Weight-Value Scatter Plot')
+    plt.xlabel('重量')
+    plt.ylabel('价值')
+    plt.title('D01KP 重量-价值散点图')
     plt.grid(alpha=0.3)
     plt.show()
